@@ -10,11 +10,11 @@ do
 dynAi= 0;
 read usrCh;
 usrChN= 0;
-if [ usrCh == "rock" ]; then
+if [ usrCh = "rock" ]; then
   usrChN= 0;
-elif [ usrCh == "paper"]; then
+elif [ usrCh = "paper"]; then
   usrChN= 1;
-elif [ usrCh == "scissors"]; then 
+elif [ usrCh = "scissors"]; then 
   usrChN= 2;
 fi
 done
