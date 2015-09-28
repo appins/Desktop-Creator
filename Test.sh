@@ -2,6 +2,6 @@
 
 echo "Pick a directroy at the location of ~/../..";
 read dirName;
-sleep 6;
+sleep 0.1;
 cd "~/../../$dirname";
 
