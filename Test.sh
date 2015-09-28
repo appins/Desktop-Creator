@@ -1,7 +1,8 @@
-#!/bin/bash
-cDir= pwd;
-echo "Pick a directroy at the location of $cDir";
-read dirName;
-sleep 0.1;
-cd dirName;
+echo "This directory will be used.";
+echo "How many copys?";
+read cpn;
+echo "What file?";
+read fn;
+
+echo "$fn $cpn";
 
