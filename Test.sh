@@ -3,5 +3,6 @@
 echo "Pick a directroy at the location of ~/../..";
 read dirName;
 sleep 0.1;
-cd "~/../../$dirname";
+cd "~/../../";
+cd $dirName;
 
