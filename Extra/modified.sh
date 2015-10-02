@@ -7,8 +7,8 @@ echo "Do you wish to continue?";
 
 
 read ans;
-if [ ans=="yes" ] then
-  
+if [ ans=="yes" ]; then
+  :;
 else
   exit;
 fi
