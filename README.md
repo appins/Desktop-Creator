@@ -1,4 +1,4 @@
-# .Desktop Creator v0.0.2
+# .Desktop Creator v0.0.4 Revision 1 (Bash only)
 ##### This is currently Linux only!
 ##### This will also only work if your OS supports .desktop files
 ###### licensed under the Eclipse Public License v1.0
@@ -7,7 +7,8 @@
 * Creates the file on the desktop
 * You can run the code bellow in "USE" without even downloading the .zip file
 * Useful for opening a server running in bash
-* Simple and easy to use.
+* Simple and easy to use
+* Creates a beta folder on your desktop with info about the process  
 
 ## USE:
 * Open terminal
