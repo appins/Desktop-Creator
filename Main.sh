@@ -12,7 +12,7 @@ if [ "$option"=="yes" ]; then
   cd ~/Desktop/
   echo "[Desktop Entry]
 Type=Application
-Exec=sudo $filename
+Exec=bash $filename
 Terminal=true" > "Start.desktop";
 chmod +x Start.desktop;
 echo "Done!"
