@@ -5,5 +5,7 @@
 ## USE:
 * Extract the zip file
 * Open terminal
-* Type ```bash ~/Desktop/Main.sh```
+* Type ```bash
+~/Desktop/Main.sh
+```
 * Follow on-screen instructions
