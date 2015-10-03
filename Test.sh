@@ -14,6 +14,7 @@ Type=Application
 Exec=$HOME/$filename
 Terminal=true" > "Start.desktop";
 chmod +x Start.desktop;
+echo "Done!"
 else
   echo "Please re-run this file";
 fi
