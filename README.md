@@ -1,4 +1,4 @@
-# .Desktop Creator v0.0.4 Revision 3 (Bash only)
+# .Desktop Creator v0.1.0 Revision 1
 ##### This is currently Linux only!
 ##### This will also only work if your OS supports .desktop files
 ###### licensed under the Eclipse Public License v1.0
