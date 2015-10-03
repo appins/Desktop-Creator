@@ -3,10 +3,9 @@
 ##### This will also only work if your OS supports .desktop files
 
 ## USE:
-* Extract the zip file
 * Open terminal
 * Type
 ```bash
-~/Desktop/Main.sh
+bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Main.sh)
 ```
 * Follow on-screen instructions
