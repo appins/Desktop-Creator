@@ -4,7 +4,7 @@
 # Uncomment line bellow if this is modified
 #bash <(curl -s https://raw.githubusercontent.com/AppIns/Test/master/Extra/modified.sh)
 
-echo -n "Supply a file: ";
+echo -n "Supply a file: (Drag)";
 read filename;
 echo "is $filename correct: ";
 read option;
@@ -12,7 +12,7 @@ if [ "$option"=="yes" ]; then
   cd ~/Desktop/
   echo "[Desktop Entry]
 Type=Application
-Exec=$filename
+Exec=sudo $filename
 Terminal=true" > "Start.desktop";
 chmod +x Start.desktop;
 echo "Done!"
