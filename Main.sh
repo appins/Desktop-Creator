@@ -1,3 +1,4 @@
+# Desktop Creator!
 # This program is licensed under the Eclipse Public Licsense v1.0
 
 # Uncomment line bellow if this is modified
