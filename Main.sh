@@ -18,6 +18,9 @@ echo "Most bash commands should work"
 echo -n "What command should the file be run with: ";
 read Type;
 
+echo -n "What should the file be called: "
+read SaveName;
+
 cd ~/Desktop/;
 stamp=$(date);
 # Stamps all beta_info files
@@ -34,7 +37,8 @@ echo "Info [
   Terminal: True,
   Type: Application,
   Source: GitHub.com/AppIns/Desktop-Creator,
-  Version: v0.1.0 Revision 1
+  Name: $SaveName
+  Version: v0.1.1 Revision 1
 ];
 User_Info [
   This file was gen: $stamp
@@ -48,10 +52,9 @@ cd ..;
 echo "[Desktop Entry]
 Type=Application
 Exec=$Type $filename
-Terminal=true" > "Start.desktop";
+Terminal=true" > "$SaveName.desktop";
 
 # Allows user to execute
-chmod +x Start.desktop;
-
+chmod +x $SaveName\.desktop;
 echo "Done!"
 exit;
