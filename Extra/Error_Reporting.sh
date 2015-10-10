@@ -13,7 +13,7 @@
 # This sources the program, just leave this here
 echo "";
 echo "NOTICE: Error reporting, Source: GitHub.com/AppIns/Linux-System-Info";
-echo "NOTICE: Some info will be recorded.";
+echo "NOTICE: Some info will be recorded. All files can be found in ~/.DesktopCreator";
 echo "";
 
 # Comment or uncomment anything bellow to change reporting info.
@@ -55,7 +55,7 @@ fi
 
 # Time Vars
 Sec=$(date +%s);
-Day=$(date \"+%m +%d +%y\");
+Day=$(date \'+%m +%d +%y\');
 
 echo "-NEW REPORT AT $Sec-
 Date: $SystemTime
