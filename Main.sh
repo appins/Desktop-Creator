@@ -23,7 +23,7 @@ read Type;
 echo -n "What should the file be called: "
 read SaveName;
 
-Command=$("$Type\ $filename");
+Command=$("$Type-$filename");
 
 # log files:
 bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh) $SaveName $Command;
