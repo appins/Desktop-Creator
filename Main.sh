@@ -6,8 +6,10 @@
 # Uncomment line bellow if this is modified
 #bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/modified.sh)
 
+# v0.1.2 Revision 1
 
 # Need help? Email me! AlexAndersonOne@gmail.com
+cd ~/Desktop;
 
 echo -n "Supply a file or argument: ";
 read filename;
@@ -21,32 +23,10 @@ read Type;
 echo -n "What should the file be called: "
 read SaveName;
 
-cd ~/Desktop/;
-stamp=$(date);
-# Stamps all beta_info files
-mkdir beta_info;
-cd beta_info;
-# Beta folder... Used to help understand problems.
-echo "Hi! This folder contains info about the desktop that was created
-Failure? Email this folder to AlexAndersonOne@gmail.com
-Genorated $stamp" > Welcome.txt
-# Please uncomment the line bellow if the is code is modified.
-#echo "This file has been modified by . $stamp" > mod.txt
-echo "Info [
-  Command: $Type $filename,
-  Terminal: True,
-  Type: Application,
-  Source: GitHub.com/AppIns/Desktop-Creator,
-  Name: $SaveName
-  Version: v0.1.1 Revision 1
-];
-User_Info [
-  This file was gen: $stamp
-  Failure? Email this whole folder to AlexAndersonOne@gmail.com.
-]; END;
-  Thanks!
-" > Info.txt;
-cd ..;
+Command=$("$Type $filename");
+
+# log files:
+bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh) $SaveName $Command;
 
 # This is where the genoration happens
 echo "[Desktop Entry]
@@ -54,6 +34,7 @@ Type=Application
 Exec=$Type $filename
 Terminal=true" > "$SaveName.desktop";
 
+cd ~/Desktop;
 # Allows user to execute
 chmod +x $SaveName\.desktop;
 echo "Done!"
