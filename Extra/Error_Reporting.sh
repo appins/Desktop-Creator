@@ -55,7 +55,7 @@ fi
 
 # Time Vars
 Sec=$(date +%s);
-Day=$(date \"+%m %d %y\");
+Day=$(date "+%m %d %y");
 
 echo "-NEW REPORT AT $Sec-
 Date: $SystemTime
