@@ -61,11 +61,11 @@ echo "-NEW REPORT AT $Sec-
 Date: $SystemTime
 Kernal: $SystemKernName $SystemKernVers
 Program: $ProgramName $ProgramVersion
-Command: $1
+Command: $2
 Terminal: True,
 Type: Application,
 Source: GitHub.com/AppIns/Desktop-Creator,
-Name: $0
+Name: $1
 This document was genorated by GitHub.com/AppIns/Linux-System-Info
 If problems are found, send this report to: AlexAndersonOne@gmail.com
 
