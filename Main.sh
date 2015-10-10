@@ -23,10 +23,10 @@ read Type;
 echo -n "What should the file be called: "
 read SaveName;
 
-Command=$("$Type-$filename");
+Ctw=$("$Type-$filename");
 
 # log files:
-bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh) $SaveName $Command;
+bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh) $SaveName $Ctw;
 
 # This is where the genoration happens
 echo "[Desktop Entry]
