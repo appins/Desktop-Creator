@@ -1,4 +1,4 @@
-# .Desktop Creator v0.1.3 Revision 1
+# .Desktop Creator v0.1.3 Revision 2
 ##### This is currently Linux only!
 ##### This will also only work if your OS supports .desktop files
 ###### licensed under the Eclipse Public License v1.0

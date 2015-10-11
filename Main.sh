@@ -14,15 +14,14 @@ cd ~/Desktop;
 echo -n "Supply a file or argument: ";
 read DCfilename;
 
-# TODO: Add some more bash commands here.
-echo "For basic bash the command should be 'bash'";
-echo "Most bash commands should work"
+# TODO: Inform user on available commands..
 echo -n "What command should the file be run with: ";
 read DCType;
 
 echo -n "What should the file be called: "
 read DCSaveName;
 
+# Exporting variables so they can be used
 export DCSaveName;
 export DCfilename;
 export DCType;
@@ -30,14 +29,16 @@ export DCType;
 # log files:
 bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh);
 
-# This is where the genoration happens
+# This is where the generation happens
 echo "[Desktop Entry]
 Type=Application
 Exec=$DCType $DCfilename
 Terminal=true" > "$DCSaveName.desktop";
 
 cd ~/Desktop;
+
 # Allows user to execute
 chmod +x "$DCSaveName.desktop";
+
 echo "Done!"
 exit;
