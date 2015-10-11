@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # This is the error reporter I am using in my project, also made by me.
+# This program was modified, I give credit to myself.
 
 # This program is intended for use in 3rd party projects.
 # This could be used for error reporting. Or finding system problems.
@@ -61,13 +62,15 @@ echo "-NEW REPORT AT $Sec-
 Date: $SystemTime
 Kernal: $SystemKernName $SystemKernVers
 Program: $ProgramName $ProgramVersion
-Command: $2
+Command: $DCType $DCfilename
 Terminal: True,
 Type: Application,
 Source: GitHub.com/AppIns/Desktop-Creator,
-Name: $1
+Name: $DCSaveName
 This document was genorated by GitHub.com/AppIns/Linux-System-Info
 If problems are found, send this report to: AlexAndersonOne@gmail.com
+Signed: AppIns, 10-11-15.
+-END REPORT-
 
 
 " >> "$Day.txt";

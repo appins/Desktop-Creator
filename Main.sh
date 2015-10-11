@@ -12,30 +12,32 @@
 cd ~/Desktop;
 
 echo -n "Supply a file or argument: ";
-read filename;
+read DCfilename;
 
 # TODO: Add some more bash commands here.
 echo "For basic bash the command should be 'bash'";
 echo "Most bash commands should work"
 echo -n "What command should the file be run with: ";
-read Type;
+read DCType;
 
 echo -n "What should the file be called: "
-read SaveName;
+read DCSaveName;
 
-Ctw="$Type\ $filename";
+export DCSaveName;
+export DCfilename;
+export DCType;
 
 # log files:
-bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh) $SaveName $Ctw;
+bash <(curl -s https://raw.githubusercontent.com/AppIns/Desktop-Creator/master/Extra/Error_Reporting.sh);
 
 # This is where the genoration happens
 echo "[Desktop Entry]
 Type=Application
-Exec=$Type $filename
-Terminal=true" > "$SaveName.desktop";
+Exec=$DCType $DCfilename
+Terminal=true" > "$DCSaveName.desktop";
 
 cd ~/Desktop;
 # Allows user to execute
-chmod +x $SaveName\.desktop;
+chmod +x "$DCSaveName.desktop";
 echo "Done!"
 exit;
